@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,sum;
+	
+	printf("Enter the limit:");
+	scanf("%i",&n);
+	
+	sum=0;
+	i=1;
+	abc:
+		sum=sum+i;
+		i=i+1;
+	if(i<=n)
+		goto abc;
+	
+	printf("Sum of natural numbers %i",sum);
+	return 0;
+}
