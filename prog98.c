@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main()
 {
-	int i,n,fact;
+	int n,sum;
 	
 	printf("Enter any natural number:");
 	scanf("%i",&n);
 	
-	fact=1;
-	i=1;
-	while(i<=n)
+	rev=0;
+	while(n!=0)
 	{
-		fact=fact*i;
-		i++;
+		rev=rev*10+n%10;
+		n=n/10;
 	}
 	
-	printf("Factorial %i",fact);
+	printf("reverse number %i",rev);
 	return 0;
 }

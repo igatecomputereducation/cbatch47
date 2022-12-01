@@ -6,14 +6,10 @@ int main()
 	printf("Enter the limit:");
 	scanf("%i",&n);
 	
-	sum=0;
-	i=1;
-	while(i<=n)
-	{
-		sum=sum+i;
-		i++;
-	}
 	
-	printf("Sum of natural numbers %i",sum);
+	for(sum=0,i=1;i<=n;i++)
+		sum=sum+i;
+	
+	printf("Sum of all the natural numbers %i",sum);
 	return 0;
 }

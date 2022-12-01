@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main()
 {
-	int i,n,fact;
+	int i,n;
 	
 	printf("Enter any natural number:");
 	scanf("%i",&n);
 	
-	fact=1;
 	i=1;
 	while(i<=n)
 	{
-		fact=fact*i;
+		if(n%i==0)
+			printf("%i\n",i);
 		i++;
 	}
 	
-	printf("Factorial %i",fact);
 	return 0;
 }

@@ -1,19 +1,17 @@
 #include<stdio.h>
 int main()
 {
-	int i,n,fact;
+	int i,n,sum;
 	
 	printf("Enter any natural number:");
 	scanf("%i",&n);
 	
-	fact=1;
-	i=1;
-	while(i<=n)
+	for(sum=0,i=1;i<=n;i++)
 	{
-		fact=fact*i;
-		i++;
+		if(n%i==0)
+			sum=sum+i;
 	}
 	
-	printf("Factorial %i",fact);
+	printf("Sum of all the factors %i",sum);
 	return 0;
 }
